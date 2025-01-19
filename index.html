@@ -7,6 +7,7 @@
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap" rel="stylesheet">
     <style>
     @media screen and (min-width:1024px) and (max-width: 1920px){
+
         #arrow_right_pic,#arrow_left_pic {
             cursor: pointer; 
         }
@@ -28,6 +29,7 @@
             width: 100vw;
             height: 100vh;
             background-image: url(static/ellora_app/images/bg7.png);
+            cursor: url(static/ellora_app/images/custom_cursor.png) 16 16;
         }
         .header {
         width: 100vw; 
@@ -277,7 +279,7 @@
             transition: all 500ms ease-in-out;
         }
         .about_info_content:hover{
-            border-radius: 79% 21% 74% 26% / 18% 42% 58% 82% ;
+            border-radius: 50% 50% 49% 51% / 50% 50% 50% 50% ;
         }
         .about_width{
             width: 100%;
@@ -351,6 +353,11 @@
             justify-content: center;
             align-items: center;
             padding: 16px 0px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .work_info_content:hover {
+            transform: translateY(-20px); 
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
         }
         .work_width{
             width: 100%;
@@ -690,7 +697,7 @@
             height: 64px;
             border-radius: 16px;
             background-color: rgba(71, 231, 71, 1);
-            border: 1px solid rgba(71, 231, 71, 1)e;
+            border: 1px solid rgba(71, 231, 71, 1);
             font-family: 'Satoshi', sans-serif;
             font-size: 16px;
             font-weight: 500;
@@ -1149,7 +1156,7 @@
             transition: all 500ms ease-in-out;
         }
         .about_info_content:hover{
-            border-radius: 79% 21% 74% 26% / 18% 42% 58% 82% ;
+            border-radius: 50% 50% 49% 51% / 50% 50% 50% 50% ;
         }
         .about_width{
             width: 100%;
@@ -1223,6 +1230,7 @@
             justify-content: center;
             align-items: center;
             padding: 16px 0px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .work_width{
             width: 100%;
@@ -1233,6 +1241,10 @@
             height: auto;
             gap: 8px;
             flex-wrap: wrap;
+        }
+        .work_info_content:hover {
+            transform: translateY(-20px); 
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
         }
         .work_info_content_image{
             width: 370px;
@@ -1560,9 +1572,9 @@
             margin-top: 16px;
             width: 703px;
             height: 64px;
-            border-radius: 16px;
+            border-radius: 16px ;
             background-color: rgba(71, 231, 71, 1);
-            border: 1px solid rgba(71, 231, 71, 1)e;
+            border: 1px solid rgba(71, 231, 71, 1);
             font-family: 'Satoshi', sans-serif;
             font-size: 16px;
             font-weight: 500;
@@ -2023,7 +2035,7 @@
                 Testimonials
             </div>
             <div id="testimonial_info">
-                <img id="arrow_left_pic" src="static/ellora_app/images/arrow_left.png">
+                <!-- <img id="arrow_left_pic" src="static/ellora_app/images/arrow_left.png"> -->
                 <div class="testimonial_info_content">
                     <div id="testimonial_width">
                         <div class="testimonial_info_content_upper">
@@ -2046,7 +2058,7 @@
                     </div>
                     
                 </div>
-                <img id="arrow_right_pic" src="static/ellora_app/images/arrow_right.png" onclick="">
+                <!-- <img id="arrow_right_pic" src="static/ellora_app/images/arrow_right.png" > -->
             </div>
         </div>
 
@@ -2151,29 +2163,29 @@
     </div>
 
     <script>
-        const arrowRightPic = document.getElementById('arrow_right_pic');
-        const arrowLeftPic = document.getElementById('arrow_left_pic');
-        const testimonialInfoContents = document.querySelectorAll('.testimonial_info_content');
+        // const arrowRightPic = document.getElementById('arrow_right_pic');
+        // const arrowLeftPic = document.getElementById('arrow_left_pic');
+        // const testimonialInfoContents = document.querySelectorAll('.testimonial_info_content');
         
-        let originalContent = '';
+        // let originalContent = '';
 
-        window.addEventListener('load', function() {
-            testimonialInfoContents.forEach(function(content) {
-                originalContent = content.innerHTML;
-            });
-        });
+        // window.addEventListener('load', function() {
+        //     testimonialInfoContents.forEach(function(content) {
+        //         originalContent = content.innerHTML;
+        //     });
+        // });
 
-        arrowRightPic.addEventListener('click', function() {
-            testimonialInfoContents.forEach(function(content) {
-                content.innerHTML = '';
-            });
-        });
+        // arrowRightPic.addEventListener('click', function() {
+        //     testimonialInfoContents.forEach(function(content) {
+        //         content.innerHTML = '';
+        //     });
+        // });
 
-        arrowLeftPic.addEventListener('click', function() {
-            testimonialInfoContents.forEach(function(content) {
-                content.innerHTML = originalContent;
-            });
-        });
+        // arrowLeftPic.addEventListener('click', function() {
+        //     testimonialInfoContents.forEach(function(content) {
+        //         content.innerHTML = originalContent;
+        //     });
+        // });
         const questions = document.querySelectorAll('.questions');
         const popupOverlay = document.getElementById('popup-overlay');
         const popupContent = document.getElementById('popup-content');
@@ -2198,6 +2210,18 @@
             if (event.target === popupOverlay) {
                 popupOverlay.style.display = 'none'; 
             }
+        });
+
+
+        const image = document.getElementById('message_pic');
+        const container = document.getElementById('button_req');
+
+        container.addEventListener('mouseenter', () => {
+            image.src = 'static/ellora_app/images/message2.png';
+        });
+
+        container.addEventListener('mouseleave', () => {
+            image.src = 'static/ellora_app/images/message.png';
         });
     </script>
 </body>
