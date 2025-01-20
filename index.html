@@ -165,7 +165,7 @@
         #star2_pic{
             position: absolute;
             top: 584px;
-            left: 764px;
+            left: 844px;
             width: 48px;
             height: 48px;
         }
@@ -233,7 +233,6 @@
             width: 100%;
             height: 4120px;
             flex-wrap: wrap;
-
         }
         .about_section{
             width: 100%;
@@ -703,7 +702,100 @@
             font-weight: 500;
             color:black;
         }
-        .question_section{
+        .question_section {
+            width: 100%;
+            max-width: 1120px;
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #question_heading {
+            font-weight: 500;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 32px;
+            font-family: 'Satoshi', sans-serif;
+            font-weight: 500;
+            font-size:32px;
+            color: white;
+        }
+
+        #question_info {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1120px;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .faq_item {
+            width: 100%;
+            border: 1px solid white;
+            border-radius: 16px;
+            overflow: hidden; 
+            transition: all 0.3s ease-in-out;
+        }
+
+        .questions {
+            backdrop-filter: blur(10px);
+            width: 100%;
+            height: 78px;
+            background-color: rgba(69, 93, 130, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 600px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .questions:hover {
+            background-color: rgba(69, 93, 130, 0.3);
+        }
+
+        .ques_content {
+            width: 428px;
+            font-size: 16px;
+            color: white;
+            font-family: 'Satoshi', sans-serif;
+            font-size: 16px;
+        }
+
+        .arrow_down_pic {
+            width: 32px;
+            height: 24px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .questions.active .arrow_down_pic {
+            transform: rotate(180deg);
+        }
+
+        .answer {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 14px;
+            padding: 16px 32px;
+            display: none;
+            font-family: 'Satoshi', sans-serif;
+            font-weight: 500;
+            font-size:16px;
+            transition: all 0.3s ease-in-out;
+            box-sizing: border-box; 
+            word-wrap: break-word; 
+            overflow-wrap: break-word;
+        }
+
+        .faq_item.expanded .answer {
+            display: block;
+        }
+        /*.question_section{
             width: 100%;
             height: auto;
             display: flex;
@@ -718,11 +810,6 @@
             font-weight: 500;
             font-size:32px;
             color: white;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             padding-bottom: 32px;
         }
         #question_info{
@@ -806,7 +893,7 @@
             width: 30px;
             height: 20px;
             transition: transform 0.3s ease;
-        }
+        }*/
         #footer{
             background-color: rgba(0, 0, 0, 0.65);
             backdrop-filter: blur(10px);
@@ -1580,7 +1667,100 @@
             font-weight: 500;
             color:black;
         }
-        .question_section{
+        .question_section {
+            width: 100%;
+            max-width: 1120px;
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #question_heading {
+            font-weight: 500;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 32px;
+            font-family: 'Satoshi', sans-serif;
+            font-weight: 500;
+            font-size:32px;
+            color: white;
+        }
+
+        #question_info {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1120px;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .faq_item {
+            width: 100%;
+            border: 1px solid white;
+            border-radius: 16px;
+            overflow: hidden; 
+            transition: all 0.3s ease-in-out;
+        }
+
+        .questions {
+            backdrop-filter: blur(10px);
+            width: 100%;
+            height: 78px;
+            background-color: rgba(69, 93, 130, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 45%;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .questions:hover {
+            background-color: rgba(69, 93, 130, 0.3);
+        }
+
+        .ques_content {
+            width: 428px;
+            font-size: 16px;
+            color: white;
+            font-family: 'Satoshi', sans-serif;
+            font-size: 16px;
+        }
+
+        .arrow_down_pic {
+            width: 32px;
+            height: 24px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .questions.active .arrow_down_pic {
+            transform: rotate(180deg);
+        }
+
+        .answer {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 14px;
+            padding: 16px 32px;
+            display: none;
+            font-family: 'Satoshi', sans-serif;
+            font-weight: 500;
+            font-size:16px;
+            transition: all 0.3s ease-in-out;
+            box-sizing: border-box; 
+            word-wrap: break-word; 
+            overflow-wrap: break-word;
+}
+
+        .faq_item.expanded .answer {
+            display: block;
+        }
+        /*.question_section{
             width: 100%;
             height: auto;
             display: flex;
@@ -1683,7 +1863,7 @@
             width: 30px;
             height: 20px;
             transition: transform 0.3s ease;
-        }
+        }*/
         #footer{
             background-color: rgba(0, 0, 0, 0.65);
             backdrop-filter: blur(10px);
@@ -1804,7 +1984,7 @@
                     <div>Request Quote</div><img id="message_pic" src="static/ellora_app/images/message.png">
                 </div>
             </div>
-            <img id="person_pic" src="static/ellora_app/images/person.png">
+            <img id="person_pic" src="static/ellora_app/images/person2.png">
         </div>
         <div id="circle_dot">
             <div id="circle"></div>
@@ -2087,46 +2267,67 @@
         </div>
 
         <div class="div" id="end-of-contact"></div>
-
         <div class="question_section">
             <div id="question_heading">
                 Frequently Asked Questions
             </div>
             <div id="question_info">
-                <div class="questions">
-                    <div class="ques_content">
-                        How do I get started with Ellora Agency?
+                <div class="faq_item">
+                    <div class="questions" onclick="toggleAnswer(this)">
+                        <div class="ques_content">
+                            How do I get started with Ellora Agency?
+                        </div>
+                        <img class="arrow_down_pic" src="static/ellora_app/images/arrow_down.png" alt="Arrow Down">
                     </div>
-                    <img class="arrow_down_pic" src="static/ellora_app/images/arrow_down.png" alt="Arrow Down">
+                    <div class="answer">
+                        Getting started with us is simple! Reach out through our contact form or email, and tell us about your project. We'll schedule a free consultation to understand your needs, brainstorm ideas, and guide you through our process. From there, we’ll provide a tailored proposal to kick off your project seamlessly.
+                    </div>
                 </div>
-                <div class="questions">
-                    <div class="ques_content">
-                        Can you accommodate tight deadlines?
+    
+                <div class="faq_item">
+                    <div class="questions" onclick="toggleAnswer(this)">
+                        <div class="ques_content">
+                            Can you accommodate tight deadlines?
+                        </div>
+                        <img class="arrow_down_pic" src="static/ellora_app/images/arrow_down.png" alt="Arrow Down">
                     </div>
-                    <img class="arrow_down_pic" src="static/ellora_app/images/arrow_down.png" alt="Arrow Down">
+                    <div class="answer">
+                        Yes, we understand that some projects require quick turnarounds. While we strive to maintain the highest quality, we’ll assess your deadline during the consultation and let you know if it’s achievable. Our team is flexible and committed to delivering exceptional results, even on tight schedules.                    </div>
                 </div>
-                <div class="questions">
-                    <div class="ques_content">
-                        What payment methods do you accept?
+    
+                <div class="faq_item">
+                    <div class="questions" onclick="toggleAnswer(this)">
+                        <div class="ques_content">
+                            What payment methods do you accept?
+                        </div>
+                        <img class="arrow_down_pic" src="static/ellora_app/images/arrow_down.png" alt="Arrow Down">
                     </div>
-                    <img class="arrow_down_pic" src="static/ellora_app/images/arrow_down.png" alt="Arrow Down">
+                    <div class="answer">
+                        We accept a variety of payment methods for your convenience, including credit and debit cards, UPI, bank transfers, and digital wallets like Google Pay or Paytm. International clients can also pay via PayPal or wire transfers. If you have specific requirements, feel free to discuss them with us.
+                    </div>
                 </div>
-                <div class="questions">
-                    <div class="ques_content">
-                        What is your pricing structure?
+    
+                <div class="faq_item">
+                    <div class="questions" onclick="toggleAnswer(this)">
+                        <div class="ques_content">
+                            What is your pricing structure?
+                        </div>
+                        <img class="arrow_down_pic" src="static/ellora_app/images/arrow_down.png" alt="Arrow Down">
                     </div>
-                    <img class="arrow_down_pic" src="static/ellora_app/images/arrow_down.png" alt="Arrow Down">
+                    <div class="answer">
+                        Our pricing is project-based and depends on the scope and complexity of your needs. After an initial consultation, we’ll provide a transparent, detailed quote that outlines all costs. Whether you need a one-time service or ongoing support, we offer competitive rates to ensure value for money.                    </div>
                 </div>
             </div>
         </div>
+             
     </main>
-    <div class="popup-overlay" id="popup-overlay">
+    <!-- <div class="popup-overlay" id="popup-overlay">
         <div class="popup-box">
             <h2>Question Details</h2>
             <p id="popup-content"></p>
             <button class="close-btn" id="close-btn">Close</button>
         </div>
-    </div>
+    </div> -->
     <footer id="footer">
         <div id="upper_footer">
             <div id="upper_footer_left">
@@ -2186,43 +2387,65 @@
         //         content.innerHTML = originalContent;
         //     });
         // });
-        const questions = document.querySelectorAll('.questions');
-        const popupOverlay = document.getElementById('popup-overlay');
-        const popupContent = document.getElementById('popup-content');
-        const closeBtn = document.getElementById('close-btn');
+        // const questions = document.querySelectorAll('.questions');
+        // const popupOverlay = document.getElementById('popup-overlay');
+        // const popupContent = document.getElementById('popup-content');
+        // const closeBtn = document.getElementById('close-btn');
 
         
-        questions.forEach(function(question) {
-            question.addEventListener('click', function() {
-                const questionText = question.querySelector('.ques_content').innerText;
-                popupContent.innerText = questionText;  
-                popupOverlay.style.display = 'flex'; 
-            });
-        });
+        // questions.forEach(function(question) {
+        //     question.addEventListener('click', function() {
+        //         const questionText = question.querySelector('.ques_content').innerText;
+        //         popupContent.innerText = questionText;  
+        //         popupOverlay.style.display = 'flex'; 
+        //     });
+        // });
 
         
-        closeBtn.addEventListener('click', function() {
-            popupOverlay.style.display = 'none';
-        });
+        // closeBtn.addEventListener('click', function() {
+        //     popupOverlay.style.display = 'none';
+        // });
 
         
-        popupOverlay.addEventListener('click', function(event) {
-            if (event.target === popupOverlay) {
-                popupOverlay.style.display = 'none'; 
-            }
-        });
+        // popupOverlay.addEventListener('click', function(event) {
+        //     if (event.target === popupOverlay) {
+        //         popupOverlay.style.display = 'none'; 
+        //     }
+        // });
 
 
         const image = document.getElementById('message_pic');
         const container = document.getElementById('button_req');
 
         container.addEventListener('mouseenter', () => {
-            image.src = 'static/ellora_app/images/message2.png';
+            image.src = 'static/ellora_app/images/message_pic.png';
         });
 
         container.addEventListener('mouseleave', () => {
             image.src = 'static/ellora_app/images/message.png';
         });
+
+
+        
+        document.addEventListener('DOMContentLoaded', () => {
+        const questions = document.querySelectorAll('.questions');
+
+        questions.forEach((questionElement) => {
+            questionElement.addEventListener('click', () => {
+                const faqItem = questionElement.parentElement;
+
+                document.querySelectorAll('.faq_item').forEach((item) => {
+                    if (item !== faqItem) {
+                        item.classList.remove('expanded');
+                        item.querySelector('.questions').classList.remove('active');
+                    }
+                });
+
+                faqItem.classList.toggle('expanded');
+                questionElement.classList.toggle('active');
+            });
+        });
+    });
     </script>
 </body>
 </html>
