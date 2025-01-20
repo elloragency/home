@@ -1867,6 +1867,16 @@
             height: 20px;
             transition: transform 0.3s ease;
         }*/
+           .upper_links_content a {
+            text-decoration: none; /* Remove the underline */
+            color: inherit;        /* Inherit the color from parent */
+            cursor: pointer;      /* Change cursor to indicate it's clickable */
+        }
+    
+        .upper_links_content a:hover {
+          color: #0056b3;   /* Example: darker color on hover */
+        }
+
         #footer{
             background-color: rgba(0, 0, 0, 0.65);
             backdrop-filter: blur(10px);
@@ -2249,7 +2259,7 @@
 
         <div class="contact_section">
             <div id="contact_heading">
-                Free Consultation
+                Get Consultation
             </div>
             <div id="contact_info">
                 <form action="https://formspree.io/f/mlddqbqv" method="post">
@@ -2345,9 +2355,10 @@
                     <div class="upper_links_content">
                         Privacy Policy
                     </div>
-                    <div class="upper_links_content">
-                        ellora.work@gmail.com
-                    </div>
+                 <div class="upper_links_content">
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTNqwngKJdRbjnRNZbVrfvHfjWDljkbWdHqFsGcXPgvxWJRPTrtZvGJLNfcJVrxnzSpnRL" 
+                        style="text-decoration: none; color: inherit; cursor: pointer;">ellora.work@gmail.com</a>
+                </div>
                 </div>
                 <div id="upper_icons">
                     <a href=""><img class="icons" src="static/ellora_app/images/instagram.png"></a>
