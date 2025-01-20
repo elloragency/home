@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Ellora</title>
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="static/ellora_app/images/ellora_pic3.png">
     <style>
     @media screen and (min-width:1024px) and (max-width: 1920px){
 
@@ -29,7 +30,7 @@
             width: 100vw;
             height: 100vh;
             background-image: url(static/ellora_app/images/bg7.png);
-            cursor: url(static/ellora_app/images/custom_cursor.png) 16 16;
+            cursor: url('my_custom_cursor.png'), auto;
         }
         .header {
         width: 100vw; 
@@ -154,6 +155,7 @@
             font-weight: 600;
             color: rgba(51, 51, 51, 1);
             background-color: #47E747;
+            text-decoration: none;
         }
         #button_req:hover{
             color: #47E747;
@@ -1117,6 +1119,7 @@
             font-weight: 600;
             color: rgba(51, 51, 51, 1);
             background-color: #47E747;
+            text-decoration: none;
         }
         #button_req:hover{
             background-color: rgba(51, 51, 51, 1);
@@ -1980,9 +1983,9 @@
             <div id="left_side_main_content">
                 <div id="main_heading">Crafting Solutions That Work For <span id="you_span">You.</span></div>
                 <div id="sub_heading">We’re your one-stop agency for UX/UI design, website development, graphic design, and content creation.</div>
-                <div id="button_req">
-                    <div>Request Quote</div><img id="message_pic" src="static/ellora_app/images/message.png">
-                </div>
+                <a href="#end-of-testimonial" id="button_req">
+                    Request Quote<img id="message_pic" src="static/ellora_app/images/message.png">
+                </a>
             </div>
             <img id="person_pic" src="static/ellora_app/images/person2.png">
         </div>
@@ -2249,7 +2252,7 @@
                 Free Consultation
             </div>
             <div id="contact_info">
-                <form action="" method="post">
+                <form action="https://formspree.io/f/mlddqbqv" method="post">
                 <input id="input_name" type="text" name="name" placeholder="Name" required>
                 <input id="input_email" type="text" name="email" placeholder="Email" required>
                 <input id="company_name" type="text" name="company" placeholder="Company Name" required>
